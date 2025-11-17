@@ -11,7 +11,7 @@ const CountDown = () => {
     let interval = useRef(null);
 
     const startTimer = () => {
-        const countDownDate = new Date('Nov 11, 2024 00:00:00').getTime();
+        const countDownDate = new Date('Nov 26, 2025 00:00:00').getTime();
 
         interval.current = setInterval(() => {
             const now = new Date().getTime();
@@ -41,13 +41,16 @@ const CountDown = () => {
     }, []);
 
     return (
+        
+  <div className="countdown-container">
+    <div id="vanta-background"></div>
         <section className="countdown-container">
            <div classname="border-grad"> <div className="countdown-header">
             <picture>
                     <source media="(max-width: 768px)" srcSet="/images/small.png" />
                     <img src="/images/large.png" alt="IEEE Week 2024" className="countdown-image" />
                 </picture>
-                <h3 className="ieee-week-dates">11th to 15th November</h3>
+                <h3 className="ieee-week-dates">26th to 29th November</h3>
             </div>
             <section className="timer-container1">
                 <section className="timer">
@@ -76,6 +79,7 @@ const CountDown = () => {
             </section>
             </div>
         </section>
+         </div>
     ); 
 };
 

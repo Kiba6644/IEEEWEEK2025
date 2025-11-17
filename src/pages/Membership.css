@@ -20,7 +20,7 @@ body, html {
     text-align: center;
     font-size: 60px;
     font-weight: bold;
-    background: linear-gradient(0deg, #236e65, #7ecd73, #cff8d6); /* Gradient colors */
+    background: linear-gradient(0deg, #1d2258, #5a90dd, #c7c8e5); /* Gradient colors */
     -webkit-background-clip: text; /* Clip the background to the text */
     -webkit-text-fill-color: transparent; /* Make text color transparent for the gradient to show */
     background-clip: text; /* For other browsers */

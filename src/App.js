@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Events from './pages/Events';
+import Schedule from './pages/schedule';
+import Sponsor from './pages/sponsor';  // Make sure the path is correct
 import Contact from './pages/contact';
 import Meet from './pages/Meet';
 import Membership from './pages/Membership';
@@ -31,7 +33,9 @@ function App() {
         <Routes>
           <Route index element={<Home />}/>
           <Route path="/home" element={<Home />} />
+          <Route path="/schedule" element={<Schedule />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/sponsor" element={<Sponsor />} />
           <Route path="/meet" element={<Meet />} />
           <Route path="/membershipact" element={<Membership />} />
           <Route path="/membership" element={<Membershipone />} />

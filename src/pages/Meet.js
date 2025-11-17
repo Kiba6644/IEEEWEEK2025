@@ -45,36 +45,36 @@ const Meet = () => {
                     <Row>
                         <Col xs={12} sm={6} md={3}>
                             <Card className="team-card">
-                                <Card.Img variant="top" src="/images/mohit.png" alt="Team Member 1" className="team-image" />
+                                <Card.Img variant="top" src="/images/nakul.png" alt="Team Member 1" className="team-image" />
                                 <Card.Body>
-                                    <Card.Title className="team-name">Mohit Poddar</Card.Title>
+                                    <Card.Title className="team-name">Nakul N Nimbalkar</Card.Title>
                                     <Card.Text className="team-role">Chairperson</Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
                             <Card className="team-card">
-                                <Card.Img variant="top" src="/images/disha.png" alt="Team Member 2" className="team-image" />
+                                <Card.Img variant="top" src="/images/uday.png" alt="Team Member 2" className="team-image" />
                                 <Card.Body>
-                                    <Card.Title className="team-name">Disha Lohia</Card.Title>
+                                    <Card.Title className="team-name">Uday Kumar</Card.Title>
                                     <Card.Text className="team-role">Vice Chairperson</Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
                             <Card className="team-card">
-                                <Card.Img variant="top" src="/images/tejas.png" alt="Team Member 3" className="team-image" />
+                                <Card.Img variant="top" src="/images/ninaada.png" alt="Team Member 3" className="team-image" />
                                 <Card.Body>
-                                    <Card.Title className="team-name">Tejas</Card.Title>
+                                    <Card.Title className="team-name">Ninaada Ranga</Card.Title>
                                     <Card.Text className="team-role">Treasurer</Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
                             <Card className="team-card">
-                                <Card.Img variant="top" src="/images/hardik.png" alt="Team Member 4" className="team-image" />
+                                <Card.Img variant="top" src="/images/sushanth.png" alt="Team Member 4" className="team-image" />
                                 <Card.Body>
-                                    <Card.Title className="team-name">Hardik Jain</Card.Title>
+                                    <Card.Title className="team-name">Sushanth C</Card.Title>
                                     <Card.Text className="team-role">Joint Treasurer</Card.Text>
                                 </Card.Body>
                             </Card>
@@ -83,31 +83,23 @@ const Meet = () => {
                     <Row className="mt-4">
                         <Col xs={12} sm={6} md={4}>
                             <Card className="team-card">
-                                <Card.Img variant="top" src="/images/suhas.png" alt="Team Member 5" className="team-image" />
+                                <Card.Img variant="top" src="/images/aadhya.png" alt="Team Member 5" className="team-image" />
                                 <Card.Body>
-                                    <Card.Title className="team-name">Suhas Shenoy Udyavara</Card.Title>
+                                    <Card.Title className="team-name">Aadhya Melvanki</Card.Title>
                                     <Card.Text className="team-role">Secretary</Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col xs={12} sm={6} md={4}>
                             <Card className="team-card">
-                                <Card.Img variant="top" src="/images/sriKrishna.png" alt="Team Member 6" className="team-image" />
+                                <Card.Img variant="top" src="/images/namratha.png" alt="Team Member 6" className="team-image" />
                                 <Card.Body>
-                                    <Card.Title className="team-name">SriKrishna Pejathaya P S</Card.Title>
+                                    <Card.Title className="team-name">Namratha P Manor</Card.Title>
                                     <Card.Text className="team-role">Joint Secretary</Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col xs={12} sm={6} md={4}>
-                            <Card className="team-card">
-                                <Card.Img variant="top" src="/images/vignesh.png" alt="Team Member 7" className="team-image" />
-                                <Card.Body>
-                                    <Card.Title className="team-name">Vignesh B</Card.Title>
-                                    <Card.Text className="team-role">Joint Secretary</Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
+                
                     </Row>
             
 
@@ -120,63 +112,57 @@ const Meet = () => {
                     <Row className='team-row'>
                         <Col xs={12} sm={6} md={3}>
                             <Card className="team-card">
-                                <Card.Img variant="top" src="/images/aadhya.png" alt="Team Member 1" className="team-image" />
+                                <Card.Img variant="top" src="/images/dhanyasri.png" alt="Team Member 1" className="team-image" />
                                 <Card.Body>
-                                    <Card.Title className="team-name">Aadhya M</Card.Title>
+                                    <Card.Title className="team-name">Nalluri Dhanyasri</Card.Title>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
                             <Card className="team-card">
-                                <Card.Img variant="top" src="/images/nakul.png" alt="Team Member 2" className="team-image" />
+                                <Card.Img variant="top" src="/images/neha.png" alt="Team Member 2" className="team-image" />
                                 <Card.Body>
-                                    <Card.Title className="team-name">Nakul N</Card.Title>
+                                    <Card.Title className="team-name">Neha Ramaiaha</Card.Title>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
                             <Card className="team-card">
-                                <Card.Img variant="top" src="/images/namratha.png" alt="Team Member 3" className="team-image" />
+                                <Card.Img variant="top" src="/images/nithyaneshwar.png" alt="Team Member 3" className="team-image" />
                                 <Card.Body>
-                                    <Card.Title className="team-name">Namratha P</Card.Title>
+                                    <Card.Title className="team-name">Nithyaneshwar</Card.Title>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
                             <Card className="team-card">
-                                <Card.Img variant="top" src="/images/ninaada.png" alt="Team Member 4" className="team-image" />
+                                <Card.Img variant="top" src="/images/rathik.png" alt="Team Member 4" className="team-image" />
                                 <Card.Body>
-                                    <Card.Title className="team-name">Ninaada Ranga</Card.Title>
+                                    <Card.Title className="team-name">Rathik</Card.Title>
                                 </Card.Body>
                             </Card>
                         </Col>
                     </Row>
-                    <Row className="mt-4">
-                        <Col xs={12} sm={6} md={4}>
-                            <Card className="team-card">
-                                <Card.Img variant="top" src="/images/shreeya.png" alt="Team Member 5" className="team-image" />
-                                <Card.Body>
-                                    <Card.Title className="team-name">Shreeya K</Card.Title>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col xs={12} sm={6} md={4}>
-                            <Card className="team-card">
-                                <Card.Img variant="top" src="/images/sushanth.png" alt="Team Member 6" className="team-image" />
-                                <Card.Body>
-                                    <Card.Title className="team-name">Sushanth C</Card.Title>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col xs={12} sm={6} md={4}>
-                            <Card className="team-card">
-                                <Card.Img variant="top" src="/images/uday.png" alt="Team Member 7" className="team-image" />
-                                <Card.Body>
-                                    <Card.Title className="team-name">Uday Ramageri</Card.Title>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
+                    <Row className="mt-4 justify-content-center">
+  <Col xs={12} sm={6} md={3}>
+    <Card className="team-card">
+      <Card.Img variant="top" src="/images/sahana.png" className="team-image" />
+      <Card.Body>
+        <Card.Title className="team-name">Sahana</Card.Title>
+      </Card.Body>
+    </Card>
+  </Col>
+
+  <Col xs={12} sm={6} md={3}>
+    <Card className="team-card">
+      <Card.Img variant="top" src="/images/shashwath.png" className="team-image" />
+      <Card.Body>
+        <Card.Title className="team-name">Shashwath</Card.Title>
+      </Card.Body>
+    </Card>
+  </Col>
+</Row>
+
 
                 {/* Sponsor Section */}
                 {/* <header className="text-center my-4 sponsor-header">

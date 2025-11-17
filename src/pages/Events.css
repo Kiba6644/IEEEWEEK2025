@@ -1,53 +1,205 @@
-.events-page{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: center;
-    
+/* Main container styles */
+.events-page {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 0.5rem;
+  box-sizing: border-box;
+  background-color: #0a0a0a; /* Dark background */
+  min-height: 100vh;
 }
-.events-section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: space-evenly;
-    margin:20px;
+
+/* Grid container for events */
+.events-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #0a0a0a; /* Dark background */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-content: center; 
+}
+
+/* Card wrapper with gradient border */
+.gradient-border {
+  background: linear-gradient(45deg, #1d2258, #5a90dd);
+  border-radius: 10px;
+  padding: 2px;
+  transition: all 0.3s ease;
+  height: 100%;
+  box-sizing: border-box;
+  min-height: 300px;
+  margin: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.gradient-border:hover {
+  transform: translateY(-5px);
+}
+
+/* Card styles */
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Remove any default margins */
+}
+
+/* Card image */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card body */
+.card-body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card title and text */
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+/* Button container at the bottom */
+.button-container {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+/* Responsive adjustments */
+/* For desktop and tablets */
+@media (min-width: 769px) {
+  .events-section {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* For tablets and mobile (2x2 grid) */
+/* For tablets and mobile (2x2 grid) */
+@media (max-width: 992px) {
+  .events-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    place-items: center; /* Center the grid items */
+    width: 100%;
+    margin: 0;
+  }
+  .events-section:has(> :only-child) {
+    grid-template-columns: 1fr;
+    max-width: 200px; /* Adjust based on your card width */
+  }
   
+  .gradient-border {
+    width: 100%;
+    aspect-ratio: 1/1; /* Makes the card square */
+    margin: 0;
+    padding: 0;
+    min-height: auto; /* Remove fixed height */
+  }
+
+  .card {
+    width: 25%;
+    height: 25%;
+    margin: 0;
+  }
+
+  .card-img-top {
+    height: 60%; /* Adjust image height within the square */
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card-body {
+    height: 40%; /* Remaining space for content */
+    padding: 0.5rem;
+    overflow: hidden;
+  }
 }
-      .modal {
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100vw !important;
-        height: 100vh !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        background-color: rgba(0, 0, 0, 0.5) !important;
-        z-index: 1000 !important;
-      }
-      
-      .modal-content {
-        background-color: #1e1e1e !important;
-        padding: 20px !important;
-        border-radius: 10px !important;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
-        width: 100% !important;
-        max-width: 600px !important;
-      }
-      h1 {
-        font-size: 2.5rem;
-        font-weight: 1000 !important;
-        margin-bottom: 100px;
-        margin-top: 40px !important;
-        background: linear-gradient(0deg, #236e65, #7ecd73, #cff8d6);
-        -webkit-background-clip: text; /* Clip the background to the text */
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        letter-spacing: 0.08em; 
-    }
-      
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .events-section {
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+  
+  .gradient-border {
+    width: 100%;
+    aspect-ratio: 1/1; /* Maintain square shape */
+  }
+  
+  .card-title {
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+  }
+  
+  .card-text {
+    font-size: 0.75rem;
+    margin: 0.25rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit text to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* Modal styles (keep these at the bottom) */
+.modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  z-index: 1000 !important;
+}
+
+.modal-content {
+  background-color: #1e1e1e !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  width: 100% !important;
+  max-width: 600px !important;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 1000 !important;
+  margin: 2rem 0;
+  text-align: center;
+  background: linear-gradient(0deg,#1d2258, #5a90dd, #c7c8e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.08em;
+  padding: 0 1rem;
+}

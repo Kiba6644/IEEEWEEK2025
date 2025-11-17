@@ -14,11 +14,13 @@ html, body {
 
 footer {
   margin-top: auto;
-  background: black; /* Gradient colors */
-  color: transparent; /* Change background to black */
-  color: white; /* Ensures text is white */
-  background: rgba(35, 110, 101, 0.2); /* Darker overlay for each event card */
+  background: rgba(35, 110, 101, 0.9); /* Solid dark teal background with some transparency */
+  color: white; /* Text color */
   transition: all 0.3s ease;
+  padding: 1.5rem 0;
+  width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 .footer-links {
@@ -36,8 +38,10 @@ footer {
 }
 
 .footer-links a:hover {
-  color: #236e65; /* Hover color for links */
- 
+  color: #7ecd73; /* Lighter teal for better contrast on hover */
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+
 }
 
 .btnu {

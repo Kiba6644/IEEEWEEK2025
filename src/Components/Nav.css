@@ -27,19 +27,19 @@
 .btnnnn{
     /* color: #7ecd73 !important;
     border-color: #7ecd73 !important; */
-    background: linear-gradient(90deg, #236e65, #7ecd73, #cff8d6);
+    background: linear-gradient(90deg, #1d2258, #5a90dd, #c7c8e5);
     margin-right: 15px;
 }
 .btnnnn:hover{
-    color: #0a0a0a !important;
-    border-color: #7ecd73 !important;
-    background-color: #7ecd73 !important;
+    color: #3300535f !important;
+    border-color: #c7c8e5 !important;
+    background-color: #c7c8e5 !important;
     box-shadow: rgb(25, 76, 135) !important;
 }
 .links:after {
     content: "";
     position: absolute;
-    background-color: #7ecd73;
+    background-color: #c7c8e5;
     height: 3px;
     width: 0;
     left: 0px;
@@ -54,12 +54,12 @@
 
   @media screen and (max-width: 768px) {
     .navbar-toggler {
-        border-color: #7ecd73 !important; /* Change hamburger border color */
+        border-color:#c7c8e5 !important; /* Change hamburger border color */
     }
 
     .navbar-toggler-icon {
         background-image: none;
-        color: #cff8d6; /* Remove default background */
+        color: #c7c8e5; /* Remove default background */
     }
     .navbar-nav-scroll{
         max-height: 150px !important;
@@ -92,7 +92,7 @@
     .links.active:after {
         content: "";
         position: absolute;
-        background-color: #7ecd73;
+        background-color:#c7c8e5;
         height: 3px;
         width: 100%; /* Full width for hover effect */
         left: 0;
@@ -104,7 +104,7 @@
     .links:not(.active):after {
         content: "";
         position: absolute;
-        background-color: #7ecd73;
+        background-color: #c7c8e5;
         height: 3px;
         width: 0; /* Start with no width */
         left: 0;

@@ -22,10 +22,10 @@ function Home() {
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
-      color: 0x428679,
-      backgroundColor: 0x0,
-      points: 25.00,
-      maxDistance: 16.00,
+      color: 0xc7c8e5,
+      backgroundColor: 0x10111d,
+      points: 30.00,
+      maxDistance: 14.00,
       spacing: 15.00,
       showDots: false
     });
@@ -60,23 +60,22 @@ function Home() {
       <h2 className="flagship-title">Flagship Event</h2>
       <div className="flagship-container">
         <div className="flagship-event">
-          <img src="/images/NCOH.jpg" alt="Flagship Event Poster" className="poster" />
+          <img src="/images/replacer.png" alt="Flagship Event Poster" className="poster" />
           <div className="description">
-            <h3>The Nine Circles of Hell </h3>
-            <p>Join us for The Nine Circles of Hell, a thrilling non-technical flagship event by the BMSCE IEEE Student Branch! Inspired by Dante's Inferno, this immersive journey challenges participants with unique trials in each circle. Overcome the infernal obstacles to compete for exciting prizes! Are you ready to face the depths? Register now</p>
-            <a href="https://forms.gle/oXV7BCGUDs6yL5jm6" target='__blank'>
-             <button className="know-more-button">Register!</button>
+            <h3>Coming Soon</h3>
+            <p>Stay tuned for more updates!</p>
+            <a href="https://forms.gle//example" target='__blank'>
+              <button className="know-more-button">Coming soon!</button>
             </a>
           </div>
         </div>
         <div className="flagship-event reverse">
-          <img src="/images/API.jpg" alt="Flagship Event Poster" className="poster" />
+          <img src="/images/replacer.png" alt="Flagship Event Poster" className="poster" />
           <div className="description">
-            <h3>API and REST</h3>
-            <p>
-            Join us at the API Workshop, where connectivity meets innovation! This hands-on session covers API essentials, including REST architecture, design, testing, and security. Perfect for developers and tech enthusiasts looking to enhance their skills and network within the tech community. </p>
-            <a href="https://forms.gle/H2bzi6CzFST3ZctT6" target='__blank'>
-              <button className="know-more-button">Register!</button>
+            <h3>Coming Soon</h3>
+            <p>Stay tuned for more updates!</p>
+            <a href="https://forms.gle//example" target='__blank'>
+              <button className="know-more-button">Coming soon!</button>
             </a>
           </div>
         </div>

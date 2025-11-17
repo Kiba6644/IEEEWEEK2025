@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const EventCard = ({ event }) => {
-  const { name, description, image, date, time,price, priceIEEE,category,registrationOpen, registrationForm} = event;
+  const { name, description, image, date, time, venue, price, priceIEEE, category, registrationOpen, registrationForm } = event;
   // Modified handleClick function to redirect to the registration link
   const handleClick = () => {
     if (registrationForm) {
@@ -35,10 +35,12 @@ const EventCard = ({ event }) => {
 
                 {/* Date, Time, and Venue in smaller font */}
                 <div className="event-details">
-                  <span>{date}</span>
-                  <span>{time}</span> 
-                  <span>{priceIEEE}  for IEEE Members</span>
-                  <span>{price} for Non-IEEE Members</span>
+                  <span className="event-name">{name}</span>
+                  <span><strong>Date:</strong> {date}</span>
+                  <span><strong>Time:</strong> {time}</span>
+                  <span><strong>Venue:</strong> {venue}</span>
+                  <span><strong>IEEE Members:</strong> {priceIEEE}</span>
+                  <span><strong>Non-IEEE Members:</strong> {price}</span>
                 </div>
 
                 {/* Event description */}
@@ -71,7 +73,7 @@ const StyledWrapper = styled.div`
     width: 400px; 
     height: 400px;
     padding: 5px;
-    background: linear-gradient(0deg, #236e65, #7ecd73, #236e65);
+    background: linear-gradient(0deg, #1d2258, #5a90dd, #c7c8e5);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -91,6 +93,16 @@ const StyledWrapper = styled.div`
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
+  }
+    .event-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    text-shadow: 0 0 3px rgba(0,0,0,0.8);
   }
 
   .content {
@@ -187,7 +199,7 @@ const StyledWrapper = styled.div`
   }
 
   .register-button {
-    background: linear-gradient(90deg, #236e65, #7ecd73, #cff8d6);
+    background: linear-gradient(90deg, #1d2258, #5a90dd, #c7c8e5);
     color: black;
     border: none;
     font-weight: 1000;
@@ -205,7 +217,7 @@ const StyledWrapper = styled.div`
   }
 
   .register-button:hover {
-    background: linear-gradient(270deg, #236e65, #7ecd73, #cff8d6);
+    background: linear-gradient(270deg, #1d2258, #5a90dd, #c7c8e5);
     color: black;
   }
 
@@ -221,7 +233,7 @@ const StyledWrapper = styled.div`
     }
 
     .event-title {
-      font-size: 0.95rem;
+      font-size: 0.5rem;
     }
 
     .event-description {
@@ -233,11 +245,11 @@ const StyledWrapper = styled.div`
       padding: 8px 10px;
     }
   }
-
+cd 
   @media (max-width: 768px) {
     .gradient-border {
-      width: 250px;
-      height: 250px;
+      width: 160px;
+      height: 200px;
     }
     .back{
       overflow:scroll;
@@ -264,29 +276,29 @@ const StyledWrapper = styled.div`
   /* Specific styling for 375px width */
   @media (max-width: 375px) {
     .gradient-border {
-      width: 180px;
-      height: 180px;
+      width: 150px;
+      height: 200px;
     }
 
     .event-title {
-      font-size: 0.75rem;
+      font-size: 0.5rem;
     }
 
     .event-details {
-      font-size: 0.65rem;
+      font-size: 0.4rem;
     }
 
     .event-description {
-      font-size: 0.65rem;
+      font-size: 0.42rem;
     }
 
     .register-button {
-      font-size: 0.65rem;
-      padding: 6px 8px;
+      font-size: 0.4rem;
+      padding: 4px 5px;
     }
 
     .back-content {
-      gap: 4px; /* Further reduced gap */
+      gap: 0.5px; /* Further reduced gap */
     }
   }
 

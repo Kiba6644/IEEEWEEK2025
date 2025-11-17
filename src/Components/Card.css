@@ -43,7 +43,7 @@ body {
   bottom: 0;
   border-radius: inherit; /* Match container's border radius */
   padding: 2px; /* Thickness of gradient border */
-  background: linear-gradient(270deg, #236e65, #7ecd73, #cff8d6);
+  background: linear-gradient(270deg, #1d2258, #5a90dd, #c7c8e5);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
@@ -95,12 +95,12 @@ body {
   font-size: 2.5em;
   margin-bottom: 0.75em;
   /* color: #f1c40f; */
-  background: linear-gradient(270deg, #236e65, #7ecd73, #cff8d6);
+  background: linear-gradient(270deg, #1d2258, #5a90dd, #c7c8e5);
   color: transparent;
   -webkit-text-fill-color: transparent;
     background-clip: text;
   font-weight: 700;
-  text-shadow: 2px 2px 4px linear-gradient(0deg, #236e65, #7ecd73, #cff8d6);
+  text-shadow: 2px 2px 4px linear-gradient(0deg, #1d2258, #5a90dd, #c7c8e5);
 }
 
 .card-description {
@@ -113,7 +113,7 @@ body {
 }
 
 .know-more-btn {
-  background: linear-gradient(90deg, #236e65, #7ecd73, #cff8d6);
+  background: linear-gradient(90deg, #1d2258, #5a90dd, #c7c8e5);
   color: black;
   border: none;
   font-weight: 1000;
@@ -129,7 +129,7 @@ body {
 }
 
 .know-more-btn:hover {
-  background: linear-gradient(270deg, #236e65, #7ecd73, #cff8d6) !important;
+  background: linear-gradient(270deg, #1d2258, #5a90dd, #c7c8e5) !important;
   color: black;
 }
 

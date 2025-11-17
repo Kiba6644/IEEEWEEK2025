@@ -1,0 +1,198 @@
+/* Update these styles in your schedule.css file */
+
+.futuristic-timeline {
+  --primary-color: #c7c8e5;
+  --secondary-color: #7b2cbf;
+  --bg-color: #0a0e17;
+  --card-bg: #121c36;
+  --text-color: #e0e0e0;
+  --accent-glow: 0 0 10px#5a90dd(0, 247, 255, 0.7);
+  
+  position: relative;
+  width:100%;
+  max-width: 1400px; /* Reduced from 1200px for better focus */
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.timeline-line {
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(to bottom, 
+    transparent, 
+    var(--primary-color), 
+    transparent);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+  opacity: 0.7;
+}
+
+.timeline-node {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: var(--accent-glow);
+  z-index: 2;
+}
+
+.timeline-item {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+
+.timeline-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 25px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(123, 44, 191, 0.3);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
+
+.day-header {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.day-header::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.event-item {
+  background: rgba(18, 28, 54, 0.7);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 3px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.event-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 247, 255, 0.2);
+}
+
+.event-time {
+  display: inline-block;
+  background: rgba(0, 247, 255, 0.1);
+  color: var(--primary-color);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  border: 1px solid var(--primary-color);
+  font-weight: 500;
+}
+
+.event-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: white;
+  font-weight: 500;
+}
+
+.event-location {
+  color: #c7c8e5;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  margin: 8px 0 15px;
+}
+
+.register-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.register-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.register-btn:hover::before {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+  }
+  
+  .timeline-line {
+    left: 20px;
+  }
+  
+  .timeline-node {
+    left: 20px;
+  }
+  
+  .timeline-card {
+    padding: 20px;
+  }
+  
+  .event-item {
+    padding: 15px;
+  }
+}

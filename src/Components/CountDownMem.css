@@ -25,7 +25,7 @@
     border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    padding: 3em;
+    padding: 4em;
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
     transition: box-shadow 0.5s ease-in-out;
@@ -39,15 +39,15 @@
 .timer div span {
     font-size: 3.5em;
     font-family: 'Orbitron', sans-serif;
-    color:#81b9a2;
-    text-shadow: 0 4px 6px #428679;
+    color: #c7c8e5;
+    text-shadow: 0 4px 6px #096fc8;
     transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
 .timer div span:hover,
 .HENRY p:first-child:hover {
-    color: #bfedc8;
-    text-shadow: 0 4px 20px #428679;
+    color:#c7c8e5;
+    text-shadow: 0 4px 20px #5a90dd;
 }
 
 .HENRY p small {
@@ -61,7 +61,7 @@
     text-align: center;
     font-size: 60px;
     font-weight: bold;
-    background: linear-gradient(0deg, #236e65, #7ecd73, #cff8d6); /* Gradient colors */
+    background: linear-gradient(0deg, #1d2258, #5a90dd, #c7c8e5); /* Gradient colors */
     -webkit-background-clip: text; /* Clip the background to the text */
     -webkit-text-fill-color: transparent; /* Make text color transparent for the gradient to show */
     background-clip: text; /* For other browsers */
@@ -112,9 +112,9 @@
     }
     .contact-title {
         text-align: center;
-        font-size: 65px;
+        font-size: 40px;
         font-weight: bold;
-        background: linear-gradient(0deg, #236e65, #7ecd73, #cff8d6); /* Gradient colors */
+        background: linear-gradient(0deg,#1d2258, #5a90dd, #c7c8e5); /* Gradient colors */
         -webkit-background-clip: text; /* Clip the background to the text */
         -webkit-text-fill-color: transparent; /* Make text color transparent for the gradient to show */
         background-clip: text; /* For other browsers */
