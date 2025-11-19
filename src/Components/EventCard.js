@@ -22,7 +22,7 @@ const EventCard = ({ event }) => {
             <div className="front">
               <div className="front-content">
                 <div className="img">
-                  <img src={image || "/images/default-event.jpg"} alt={`${name} event poster`} />
+                  <img src={image || "/public/images/default-event.jpg"} alt={`${name} event poster`} />
                 </div>
               </div>
             </div>
@@ -36,6 +36,7 @@ const EventCard = ({ event }) => {
                 {/* Date, Time, and Venue in smaller font */}
                 <div className="event-details">
                   <span className="event-name">{name}</span>
+                  <span><strong>{name}</strong></span>
                   <span><strong>Date:</strong> {date}</span>
                   <span><strong>Time:</strong> {time}</span>
                   <span><strong>Venue:</strong> {venue}</span>
