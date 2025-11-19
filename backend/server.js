@@ -7,7 +7,7 @@ const connectDB = require("./config/db");
 const eventsRouter = require("./routes/events");
 const contactRouter = require("./routes/contact");
 const sponsorRoutes = require('./routes/sponsors');
-
+const scheduleRouter = require('./routes/schedule');
 
 dotenv.config();
 const app = express();
@@ -33,7 +33,7 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use("/api/events", eventsRouter);
 app.use("/api", contactRouter);  // Assuming this is for API routes
 app.use('/api/sponsors', sponsorRoutes);
-
+app.use("/api/schedule", scheduleRouter);
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, "build")));
 
