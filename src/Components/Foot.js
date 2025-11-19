@@ -38,7 +38,7 @@ export default function Footer() {
       </MDBContainer>
 
       <div className='copyright text-center'>
-        © 2024 Copyright: 
+        © 2025 Copyright: 
         <a className='text-white' href='https://bmsceieee.com/'> BMSCE IEEE </a>
       </div>
     </MDBFooter>

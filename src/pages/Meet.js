@@ -2,7 +2,7 @@ import Navbaring from '../Components/Nav';
 import Footer from '../Components/Foot';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './Meet.css';
-
+import { Link } from 'react-router-dom';
 const Meet = () => {
     return (  
         <div>
@@ -17,6 +17,7 @@ const Meet = () => {
                 </div>
                     <Row className="justify-content-center">
                         <Col xs={12} sm={6} md={4} className="mx-auto">
+                           <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/Archana_H_R.jpg" alt="Faculty Coordinator 1" className="team-image" />
                                 <Card.Body>
@@ -24,8 +25,10 @@ const Meet = () => {
                                     <Card.Text className="team-role">Branch Counsellor</Card.Text>
                                 </Card.Body>
                             </Card>
+                            </a>
                         </Col>
                         <Col xs={12} sm={6} md={4} className="mx-auto">
+                            <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/Gururaj.jpg" alt="Faculty Coordinator 2" className="team-image" />
                                 <Card.Body>
@@ -33,6 +36,7 @@ const Meet = () => {
                                     <Card.Text className="team-role">Branch Mentor</Card.Text>
                                 </Card.Body>
                             </Card>
+                            </a>
                         </Col>
                     </Row>
 
@@ -44,6 +48,7 @@ const Meet = () => {
                 </div>
                     <Row>
                         <Col xs={12} sm={6} md={3}>
+                            <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/nakul.png" alt="Team Member 1" className="team-image" />
                                 <Card.Body>
@@ -51,8 +56,11 @@ const Meet = () => {
                                     <Card.Text className="team-role">Chairperson</Card.Text>
                                 </Card.Body>
                             </Card>
+                            </a>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
+
+                            <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/uday.png" alt="Team Member 2" className="team-image" />
                                 <Card.Body>
@@ -60,8 +68,10 @@ const Meet = () => {
                                     <Card.Text className="team-role">Vice Chairperson</Card.Text>
                                 </Card.Body>
                             </Card>
+                            </a>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
+                           <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/ninaada.png" alt="Team Member 3" className="team-image" />
                                 <Card.Body>
@@ -69,8 +79,11 @@ const Meet = () => {
                                     <Card.Text className="team-role">Treasurer</Card.Text>
                                 </Card.Body>
                             </Card>
+                            </a>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
+
+                            <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/sushanth.png" alt="Team Member 4" className="team-image" />
                                 <Card.Body>
@@ -78,10 +91,12 @@ const Meet = () => {
                                     <Card.Text className="team-role">Joint Treasurer</Card.Text>
                                 </Card.Body>
                             </Card>
+                            </a>
                         </Col>
                     </Row>
                     <Row className="mt-4">
                         <Col xs={12} sm={6} md={4}>
+                           <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/aadhya.png" alt="Team Member 5" className="team-image" />
                                 <Card.Body>
@@ -89,8 +104,10 @@ const Meet = () => {
                                     <Card.Text className="team-role">Secretary</Card.Text>
                                 </Card.Body>
                             </Card>
+                            </a>
                         </Col>
                         <Col xs={12} sm={6} md={4}>
+                           <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/namratha.png" alt="Team Member 6" className="team-image" />
                                 <Card.Body>
@@ -98,6 +115,7 @@ const Meet = () => {
                                     <Card.Text className="team-role">Joint Secretary</Card.Text>
                                 </Card.Body>
                             </Card>
+                            </a>
                         </Col>
                 
                     </Row>
@@ -111,54 +129,66 @@ const Meet = () => {
                 </div>
                     <Row className='team-row'>
                         <Col xs={12} sm={6} md={3}>
+                        <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/dhanyasri.png" alt="Team Member 1" className="team-image" />
                                 <Card.Body>
                                     <Card.Title className="team-name">Nalluri Dhanyasri</Card.Title>
                                 </Card.Body>
                             </Card>
+                        </a>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
+                         <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/neha.png" alt="Team Member 2" className="team-image" />
                                 <Card.Body>
                                     <Card.Title className="team-name">Neha Ramiah</Card.Title>
                                 </Card.Body>
                             </Card>
+                        </a>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
+                         <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/nithyaneshwar.png" alt="Team Member 3" className="team-image" />
                                 <Card.Body>
                                     <Card.Title className="team-name">Nithyaneshwar A</Card.Title>
                                 </Card.Body>
                             </Card>
+                            </a>
                         </Col>
                         <Col xs={12} sm={6} md={3}>
+                         <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/rathik.png" alt="Team Member 4" className="team-image" />
                                 <Card.Body>
                                     <Card.Title className="team-name">Ratik Agrawal</Card.Title>
                                 </Card.Body>
                             </Card>
+                            </a>
                         </Col>
                     </Row>
                     <Row className="mt-4">
                         <Col xs={12} sm={6} md={4}>
+                         <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/sahana.png" alt="Team Member 5" className="team-image" />
                                 <Card.Body>
                                     <Card.Title className="team-name">K Sahana </Card.Title>
                                 </Card.Body>
                             </Card>
+                            </a>
                         </Col>
                         <Col xs={12} sm={6} md={4}>
+                         <a href="profile" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                             <Card className="team-card">
                                 <Card.Img variant="top" src="/images/shashwath.png" alt="Team Member 6" className="team-image" />
                                 <Card.Body>
                                     <Card.Title className="team-name">Shashwat Goyal</Card.Title>
                                 </Card.Body>
                             </Card>
+                            </a>
                         </Col>
                     </Row>
 
