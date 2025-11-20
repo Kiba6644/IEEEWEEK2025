@@ -41,7 +41,7 @@ const EventCard = ({ event }) => {
                   <span><strong>Time:</strong> {time}</span>
                   <span><strong>Venue:</strong> {venue}</span>
                   <span><strong>IEEE Members:</strong> {priceIEEE}</span>
-                  <span><strong>Non-IEEE Members:</strong> {price}</span>
+                  <span><strong>Non-IEEE Members:</strong> {price}</span>cd 
                 </div>
 
                 {/* Event description */}
@@ -249,8 +249,8 @@ const StyledWrapper = styled.div`
 cd 
   @media (max-width: 768px) {
     .gradient-border {
-      width: 160px;
-      height: 200px;
+      width: 130px;
+      height: 150px;
     }
     .back{
       overflow:scroll;
